@@ -1,0 +1,279 @@
+.menu-img-container{
+    position: relative;
+    height: 85vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+    .menu-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 90%;
+
+        filter: brightness(0.7);
+    }
+
+    .menu-overlay__text{
+        display: flex;
+        flex-direction: column;
+
+        position: absolute;
+
+        bottom: 1rem;
+        left: 1.5rem;
+    }
+
+    .menu-overlay__text--title{
+        font-size: 3rem;
+        font-weight: bold;
+        color: rgb(231, 222, 212);
+    }
+
+    .menu-overlay__text--subtitle{
+        font-size: 1.5rem;
+        color: rgb(231, 222, 212);
+    }
+
+    .menu-overlay__down-arrow{
+        display: flex;
+        position: absolute;
+
+        width: 100%; 
+        bottom: 2rem; 
+        justify-content: center;
+        cursor: pointer;
+        border: 0;
+        padding: 0;
+        background: transparent;
+        
+        transition: ease-in-out 0.5s;
+    }
+
+    .menu-overlay__down-arrow:hover{
+        transform: translateY(0.625rem);
+        transition: ease-in-out 0.5s;
+    }
+
+    .account-acceded-container{
+        top: 5vh;
+        left: 0;
+
+        padding: 0.7rem 1.5rem;
+        
+        position: absolute;
+        height: auto;
+        width: auto;
+
+        background-color: rgb(143, 115, 96);
+
+        border-radius: 0 16px 16px 0;
+    }
+
+        .account-acceded-container__text{
+            display: block;
+            margin: auto;
+
+            color: white;
+            font-size: 20px;
+            
+        }
+
+    .account-logout-container{
+        background: rgb(219, 41, 41);
+        
+        place-self: center;
+
+        position: absolute;
+        bottom: 5vh;
+
+        padding: 0.3rem 0.7rem;
+        border-radius: 6px;
+    }
+
+    .account-logout-container__text{
+        color: white;
+        text-decoration: none;
+
+        display: block;
+        margin: auto;
+
+    }
+
+    .account-access-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2vh;
+
+        position: absolute;
+        top: 2vh;
+        right: 2vh;
+
+        height: 3vh;
+        width: 35vh;
+    }
+
+        .account-access__sign-in__text{
+            border: solid white 2px;
+
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+
+            text-align: center;
+        }
+        
+        .account-access__log-in__text{
+            border: solid white 2px;
+
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+
+            text-align: center;
+        }
+
+/* spacer */
+
+.spacer-container{
+    display: flex;
+    justify-content: center;
+    height: 14.25rem;
+    width: 100%;
+}
+
+    .spacer__icon{
+        margin-top: 1.875rem;
+        height: 1.875rem;
+        width: 2.5rem;
+    }
+
+.divide-line{
+    background-color: black;
+    height: 0.0625rem;
+    opacity: 0.5 !important;
+    width: 30%;
+    justify-self: center;
+}
+
+/* feature cards */
+
+.feature-cards__title{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+}
+
+.feature-cards-container{
+    display: flex;
+    overflow: hidden;
+
+    height: 25rem;
+    width: 100%;
+
+    margin-bottom: 4.75rem;
+}
+
+    .feature-card{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+
+        width: calc(100%/3); 
+        height: 100%;
+    }
+
+    .feature-card__icon{
+        justify-self: center;
+        align-self: center;
+    }
+
+    .feature-card__icon-left-size{
+        width: 5.3125rem;
+    }
+    .feature-card__icon-center-size{
+        width: 6.25rem;
+    }
+    .feature-card__icon-right-size{
+        width: 7.5rem;
+    }
+
+
+    .feature-card__text{
+        text-align: center;
+        margin-top: -0.625rem;
+        margin-left: 2.375rem; 
+        margin-right: 2.375rem;
+    }
+
+    /* to products link */
+
+.products-link-menu-container{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    overflow: hidden;
+
+    height: 20rem;
+    width: 80%;
+    justify-self: center;
+
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    border: solid rgba(0, 0, 0, 0.473) 1px;
+    border-radius: 5px;
+}
+
+    .products-link-menu__text-container{
+        width: 100%;
+        height: 100%;
+
+        padding: 4rem 4rem;
+
+    }
+
+        .products-link-menu__text{
+            font-size: 2rem;
+        }
+
+    .products-link-menu__img-container{
+        position: relative;
+        justify-self: end;
+        overflow: hidden;
+
+        width: 100%;
+        height: 100%;
+    }
+
+        .products-link-menu__img{
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+            object-position: 100% 100%;
+        }
+
+    .products-link-menu__button{
+        display: inline-block;
+
+        margin-top: 1.2rem;
+
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+
+        padding: 0.5rem 2rem;
+
+        background-color: transparent;
+
+        border: solid rgba(0, 0, 0, 0.493) 1px;
+        border-radius: 5px;
+    }
+    

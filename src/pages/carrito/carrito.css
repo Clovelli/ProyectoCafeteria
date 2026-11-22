@@ -1,0 +1,144 @@
+/* carrito.css */
+.carrito-page {
+    padding: 3rem 5rem;
+    background-color: #eef0f2;
+    min-height: 80vh;
+}
+
+.carrito-page__title {
+    font-size: 32px;
+    margin-bottom: 1.5rem;
+}
+
+.carrito-container {
+    display: flex;
+    gap: 3rem;
+}
+
+.carrito-list-section {
+    flex: 2;
+}
+
+.carrito-product-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.carrito-product-img {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carrito-product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.carrito-product-name {
+    display: block;
+    font-weight: bold;
+}
+
+.carrito-product-desc {
+    color: #666;
+}
+
+.carrito-product-price {
+    font-weight: bold;
+}
+
+.carrito-quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.carrito-quantity-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.carrito-quantity-input {
+    width: 35px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.2rem;
+}
+
+/* Panel Resumen */
+.carrito-summary-card {
+    flex: 1;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    height: fit-content;
+}
+
+.carrito-summary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #000;
+    padding-bottom: 1rem;
+}
+
+.carrito-summary-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.carrito-summary-total {
+    font-size: 24px;
+}
+
+.carrito-pay-btn {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(33, 37, 41);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.compra-exitosa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    min-height: 80vh;
+    padding: 3rem 2rem;
+    background-color: #eef0f2;
+    text-align: center;
+}
+
+.compra-exitosa__title {
+    margin: 0;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+}
+
+.compra-exitosa__button {
+    display: inline-block;
+    width: auto;
+    text-decoration: none;
+}
